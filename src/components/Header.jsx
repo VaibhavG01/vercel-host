@@ -12,7 +12,7 @@ const Header = (props) => {
 
                     <ul className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 text-center">
                         <li>He is an Admin "{props.admin}"</li>
-                        <li>Contact</li>
+                        <li>The car Speed is {props.speed}</li>
                         <li>Feedback</li>
                     </ul>
 

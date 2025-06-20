@@ -7,10 +7,11 @@ const App = () => {
   const [marks, setMarks] = useState(80)
   const [user, setuser] = useState("Vaibhav")
   const [admin, setadmin] = useState("Gautam")
+  const [speed, setSpeed] = useState(120)
 
   return (
     <>
-        <Header user={user} admin={admin} />
+        <Header user={user} admin={admin} speed={speed} />
 
         <h1>My marks were {marks}</h1>
 
