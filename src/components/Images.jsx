@@ -13,11 +13,11 @@ const Images = () => {
     const getImages = async () => {
         try {
             const response = await axios.get("https://picsum.photos/v2/list")
-            const data = response.data
-            setImages(data)
-            console.log(data)
+            const fetchData = response.data
+            setImages(fetchData)
+            // console.log(fetchData)
         } catch (error) {
-            console.error("Erroe Fetching Images  ")
+            console.error("Erroe Fetching Images")
         }
     }
     return (
@@ -32,12 +32,6 @@ const Images = () => {
                     Minimal, clean, responsive card layout like Apple’s style.
                 </p>
             </div>
-            {/* <button 
-            onClick={getImages} 
-            className='bg-gray-200 p-2 m-2 rounded-lg cursor-pointer'
-            >
-                Get Images
-            </button> */}
 
             {/* Cards Grid */}
             <div className="cards-images grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">

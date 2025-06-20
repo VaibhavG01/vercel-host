@@ -1,18 +1,18 @@
 import React from 'react'
 
-const Header = (props) => {
+const Header = () => {
     return (
         <>
             <div className="main bg-green-300 px-4 md:px-16 py-6">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
 
                     <h1 className="font-bold text-3xl md:text-5xl text-center md:text-left">
-                        {props.user}
+                        Vaibhav
                     </h1>
 
                     <ul className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 text-center">
-                        <li>He is an Admin "{props.admin}"</li>
-                        <li>The car Speed is {props.speed}</li>
+                        <li>He is an Admin "VG"</li>
+                        <li>The car Speed is 252</li>
                         <li>Feedback</li>
                     </ul>
 
