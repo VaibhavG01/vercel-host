@@ -3,16 +3,22 @@ import React from 'react'
 const Header = (props) => {
     return (
         <>
-            <div className="main h-24 bg-green-300 flex justify-between items-center px-16">
+            <div className="main bg-green-300 px-4 md:px-16 py-6">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
 
-                <h1 className='font-bold text-5xl'>{props.user}</h1>
+                    <h1 className="font-bold text-3xl md:text-5xl text-center md:text-left">
+                        {props.user}
+                    </h1>
 
-                <ul className='flex justify-center items-center gap-10'>
-                    <li>He is a Admin "{props.admin}"</li>
-                    <li>Contact</li>
-                    <li>Feedback</li>
-                </ul>
+                    <ul className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 text-center">
+                        <li>He is an Admin "{props.admin}"</li>
+                        <li>Contact</li>
+                        <li>Feedback</li>
+                    </ul>
+
+                </div>
             </div>
+
         </>
     )
 }
