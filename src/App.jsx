@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-import Header from './components/Header'
-import Images from './components/Images'
+import Home from './components/Home'
 
 const App = () => {
 
   return (
     <>
-      <Header />
-      <Images/>
+      <Home/>
     </>
   )
 }
